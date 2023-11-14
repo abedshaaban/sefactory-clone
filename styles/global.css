@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&family=Oswald:wght@400&family=Roboto:ital@0;1&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   border: 0;
   box-sizing: border-box;
+  font-family: "Noto Sans Mono", sans-serif;
 }
 
 :root {
@@ -24,16 +27,70 @@
   --purple-overlay: rgba(152, 100, 218, 0.9);
 }
 
-a {
+html,
+body,
+main {
+  width: 100%;
+}
+
+a,
+a:active,
+a:focus,
+a:focus-visible,
+a:focus-within {
+  font-size: 16px;
+  text-decoration: none;
+  color: inherit;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
   padding: 15px 20px;
   font-weight: 800;
+  display: inline-block;
+  line-height: 1;
+  cursor: pointer;
 }
 
 .padd {
   padding: 70px;
+}
+
+.px-10 {
+  padding: 0 10px;
+}
+
+.w-fit {
+  width: fit-content;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-black {
+  color: var(--black);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-black {
+  background-color: var(--black);
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 /* phones */

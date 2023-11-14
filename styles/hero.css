@@ -1,0 +1,135 @@
+.hero-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.half-hero {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  flex-flow: column;
+  padding-top: 120px;
+  padding-bottom: 60px;
+  justify-content: start;
+}
+
+.half-hero-left {
+  text-align: end;
+  align-items: end;
+  padding-left: 70px;
+  padding-right: 50px;
+  background-image: url("https://assets-global.website-files.com/63e3828f575098222357ad70/641b4c900878f534cf0d3f17_Untitled%20design%20(11).png");
+  background-position: 50%;
+  background-size: cover;
+  background-clip: border-box;
+}
+
+.color-overlay {
+  position: absolute;
+  background-color: rgba(40, 238, 167, 0.93);
+  height: 100%;
+  width: 100%;
+  margin: -120px -50px 0 0;
+  z-index: 1;
+}
+
+.half-hero-right {
+  text-align: start;
+  align-items: flex-start;
+  padding-left: 50px;
+  padding-right: 70px;
+  background-image: linear-gradient(
+      rgba(35, 35, 35, 0.85),
+      rgba(35, 35, 35, 0.85)
+    ),
+    url("https://assets-global.website-files.com/63e3828f575098222357ad70/641b4d48dc5b31ff0aa4ca67_Untitled%20design%20(12).png");
+  background-position: 0 0, 50%;
+  background-size: auto, cover;
+}
+
+.half-hero-title {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.half-hero-title-tagline {
+  margin-top: 10px;
+  line-height: 1;
+  font-size: 36px;
+}
+
+.half-hero-p {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+/* phones */
+@media (max-width: 479px) {
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .half-hero,
+  .half-hero {
+    height: auto;
+    min-height: auto;
+    padding: 24px;
+  }
+
+  .half-hero-left {
+    padding-bottom: 60px;
+    padding-top: 120px;
+  }
+
+  .half-hero-right {
+    padding-top: 60px;
+    padding-bottom: 120px;
+  }
+
+  .color-overlay {
+    margin: -120px -24px 0 0;
+  }
+}
+
+/* tablets */
+@media (min-width: 480px) and (max-width: 767px) {
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .half-hero-right {
+    min-height: 90vh;
+  }
+
+  .half-hero-left,
+  .half-hero-right {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .color-overlay {
+    margin: -120px -40px 0 0;
+  }
+}
+
+/* desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero-section {
+    flex-direction: column;
+  }
+
+  .half-hero-right {
+    min-height: 90vh;
+  }
+
+  .half-hero-left,
+  .half-hero-right {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .color-overlay {
+    margin: -120px -70px 0 0;
+  }
+}
