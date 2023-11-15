@@ -110,6 +110,7 @@
   }
 
   .milestones-card-top {
+    height: 498px;
     padding: 40px;
   }
 
@@ -137,7 +138,20 @@
   .milestones-content-second {
     width: 50%;
   }
+
   .milestones-card-top {
-    height: 498px;
+    height: 476px;
+  }
+
+  .milestones-card-top h3 {
+    font-size: 120px;
+  }
+
+  .milestones-card-top div {
+    font-size: 32px;
+  }
+
+  .milestones-card-top p {
+    font-size: 14px;
   }
 }
