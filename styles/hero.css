@@ -64,6 +64,25 @@
   line-height: 1.5;
 }
 
+.animate-opacity {
+  opacity: 1;
+  animation-name: animate-op;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animate-op {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* phones */
 @media (max-width: 479px) {
   .hero-section {
