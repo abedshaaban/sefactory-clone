@@ -29,14 +29,14 @@
 
 main {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1500px;
 }
 
 html,
 body {
   width: auto;
   margin: auto;
-  max-width: 1200px;
+  max-width: 1500px;
 }
 
 a,
