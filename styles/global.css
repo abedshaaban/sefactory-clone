@@ -27,10 +27,16 @@
   --purple-overlay: rgba(152, 100, 218, 0.9);
 }
 
-html,
-body,
 main {
   width: 100%;
+  max-width: 1200px;
+}
+
+html,
+body {
+  width: auto;
+  margin: auto;
+  max-width: 1200px;
 }
 
 a,
