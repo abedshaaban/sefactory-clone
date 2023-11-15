@@ -48,6 +48,24 @@
   z-index: 99999999;
   backdrop-filter: blur(10px);
   overflow-y: scroll;
+  display: none;
+  opacity: 0;
+  transition-duration: 0.9s;
+  animation: fade-in-overlay 0.9s ease-in-out 0;
+}
+
+.overlay-visible {
+  display: flex;
+  opacity: 1;
+}
+
+@keyframes fade-in-overlay {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .overlay-header-body {

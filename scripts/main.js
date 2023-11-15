@@ -1,3 +1,9 @@
+import { showNav, hideNav } from "./utilities.js";
+
+const overlayNav = document.getElementsByClassName("overlay-header")[0];
+const navLinks = document.getElementsByClassName("overlay-header-body-links-a");
+
+// hero tying animation
 const heroAnimationData = [
   {
     id: 0,
@@ -81,3 +87,15 @@ async function loopTextAnimation() {
 }
 
 setInterval(loopTextAnimation, 3000);
+
+// nav clicks
+showNav();
+hideNav();
+
+for (let i = 0; i < navLinks.length; i++) {
+  const element = navLinks[i];
+
+  element.addEventListener("click", () => {
+    overlayNav.classList.remove("overlay-visible");
+  });
+}
