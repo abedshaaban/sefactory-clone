@@ -118,6 +118,10 @@ a:focus-within {
   gap: 10px;
 }
 
+.gap-20 {
+  gap: 20px;
+}
+
 .padd {
   padding: 70px;
 }
@@ -148,6 +152,10 @@ a:focus-within {
 
 /* phones */
 @media (max-width: 479px) {
+  .gap-20 {
+    gap: 10px;
+  }
+
   .padd {
     padding: 24px;
   }
@@ -163,6 +171,10 @@ a:focus-within {
 
 /* tablets */
 @media (min-width: 480px) and (max-width: 767px) {
+  .gap-20 {
+    gap: 10px;
+  }
+
   .padd {
     padding: 40px;
   }
