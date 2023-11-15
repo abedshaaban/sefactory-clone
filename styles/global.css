@@ -87,6 +87,14 @@ a:focus-within {
   color: var(--black);
 }
 
+.text-green {
+  color: var(--sef_primary);
+}
+
+.text-grey {
+  color: var(--grey);
+}
+
 .bg-white {
   background-color: var(--white);
 }
