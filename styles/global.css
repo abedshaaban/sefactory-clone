@@ -107,6 +107,10 @@ a:focus-within {
   color: var(--pink_primary);
 }
 
+.text-light-grey {
+  color: var(--light_grey);
+}
+
 .bg-white {
   background-color: var(--white);
 }
