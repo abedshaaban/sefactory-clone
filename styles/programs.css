@@ -1,0 +1,215 @@
+.programs-section {
+  min-height: auto;
+  max-height: none;
+  height: auto;
+}
+
+.programs-body {
+  margin-top: 50px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.programs-body-tabs {
+  display: flex;
+  flex-flow: row;
+}
+
+.programs-body-tabs span {
+  vertical-align: top;
+  text-align: left;
+  cursor: pointer;
+  padding: 9px 30px;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 20px 50px;
+  font-weight: 900;
+  border-radius: 10px 10px 0 0;
+  padding: 20px 50px;
+  font-weight: 900;
+}
+
+.programs-body-context {
+  position: relative;
+}
+
+.programs-body-context-fsc,
+.programs-body-context-fsw,
+.programs-body-context-fsd,
+.programs-body-context-uix {
+  opacity: 0;
+  border-radius: 20px;
+  padding: 20px;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--black);
+  display: none;
+}
+
+.programs-body-context-text {
+  width: 50%;
+  grid-row-gap: 24px;
+  flex-direction: column;
+  flex: 1;
+  justify-content: flex-start;
+  align-self: stretch;
+  align-items: flex-start;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.programs-body-context-text h3 {
+  text-align: left;
+  font-size: 22px;
+  font-weight: 900;
+  line-height: 1.4;
+}
+
+.programs-body-context-text p {
+  color: var(--light_grey);
+  align-self: stretch;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.programs-body-context-text-links a {
+  background-color: var(--black-2);
+  color: var(--white);
+  text-align: left;
+  flex: none;
+  justify-content: flex-start;
+  align-self: stretch;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.4;
+  display: flex;
+}
+
+.programs-body-context-img {
+  width: 400px;
+  height: 400px;
+  min-height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.fsc-active {
+  background-color: var(--black) !important;
+  color: var(--ylw_primary) !important;
+}
+
+.fsw-active {
+  background-color: var(--black) !important;
+  color: var(--sef_primary) !important;
+}
+
+.fsd-active {
+  background-color: var(--black) !important;
+  color: var(--ppl_primary) !important;
+}
+
+.uix-active {
+  background-color: var(--black) !important;
+  color: var(--pink_primary) !important;
+}
+
+/* phones */
+@media (max-width: 479px) {
+  .programs-body {
+    margin-top: 36px;
+  }
+
+  .programs-body-tabs span {
+    padding: 15px 24px;
+  }
+
+  .programs-body-context-fsc,
+  .programs-body-context-fsw,
+  .programs-body-context-fsd,
+  .programs-body-context-uix {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .programs-body-context-text {
+    padding: 0;
+  }
+
+  .programs-body-context-text h3 {
+    font-size: 18px;
+  }
+
+  .programs-body-context-text-links {
+    flex-direction: column;
+  }
+
+  .programs-body-context-text,
+  .programs-body-context-text-links a,
+  .programs-body-context-img {
+    width: 100%;
+  }
+
+  .programs-body-context-img {
+    height: auto;
+  }
+}
+
+/* tablets */
+@media (min-width: 480px) and (max-width: 767px) {
+  .programs-body {
+    margin-top: 40px;
+  }
+
+  .programs-body-context-fsc,
+  .programs-body-context-fsw,
+  .programs-body-context-fsd,
+  .programs-body-context-uix {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .programs-body-context-text {
+    padding: 0;
+  }
+
+  .programs-body-context-text h3 {
+    font-size: 18px;
+  }
+
+  .programs-body-context-text-links {
+    flex-direction: column;
+  }
+
+  .programs-body-context-text,
+  .programs-body-context-text-links,
+  .programs-body-context-img {
+    width: 100%;
+  }
+
+  .programs-body-context-img {
+    height: auto;
+  }
+}
+
+/* desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+  .programs-body-context-text-links {
+    flex-direction: column;
+  }
+
+  .programs-body-context-img {
+    width: 200px;
+    flex: 0 auto;
+  }
+}

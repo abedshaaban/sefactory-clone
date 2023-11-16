@@ -95,6 +95,18 @@ a:focus-within {
   color: var(--grey);
 }
 
+.text-yellow {
+  color: var(--ylw_primary);
+}
+
+.text-purple {
+  color: var(--ppl_primary);
+}
+
+.text-pink {
+  color: var(--pink_primary);
+}
+
 .bg-white {
   background-color: var(--white);
 }
