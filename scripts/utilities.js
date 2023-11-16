@@ -87,3 +87,21 @@ export function handleProgramTabs() {
     programsSection.style.backgroundColor = "#fb508e";
   });
 }
+
+export function handleFqas(params) {
+  const fqa1 = document.getElementById("aws-for-qa-1");
+  const fqa2 = document.getElementById("aws-for-qa-2");
+  const fqa3 = document.getElementById("aws-for-qa-3");
+
+  fqa1.parentNode.addEventListener("click", () => {
+    fqa1.classList.toggle("auto-height");
+  });
+
+  fqa2.parentNode.addEventListener("click", () => {
+    fqa2.classList.toggle("auto-height");
+  });
+
+  fqa3.parentNode.addEventListener("click", () => {
+    fqa3.classList.toggle("auto-height");
+  });
+}

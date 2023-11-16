@@ -1,4 +1,9 @@
-import { showNav, hideNav, handleProgramTabs } from "./utilities.js";
+import {
+  showNav,
+  hideNav,
+  handleProgramTabs,
+  handleFqas,
+} from "./utilities.js";
 
 const overlayNav = document.getElementsByClassName("overlay-header")[0];
 const navLinks = document.getElementsByClassName("overlay-header-body-links-a");
@@ -107,3 +112,7 @@ fswDiv.style.display = "flex";
 fswDiv.style.opacity = "1";
 
 handleProgramTabs();
+
+// handle fqa answers
+
+handleFqas();
