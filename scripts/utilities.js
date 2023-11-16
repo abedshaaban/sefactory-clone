@@ -15,6 +15,8 @@ export function hideNav() {
 }
 
 export function handleProgramTabs() {
+  const programsSection = document.getElementById("programs");
+
   const fcsTab = document.getElementById("programs-body-tabs-fcs");
   const fswTab = document.getElementById("programs-body-tabs-fsw");
   const fsdTab = document.getElementById("programs-body-tabs-fsd");
@@ -55,6 +57,7 @@ export function handleProgramTabs() {
     fcsTab.classList.add("fsc-active");
     fcsDiv.style.display = "flex";
     fcsDiv.style.opacity = "1";
+    programsSection.style.backgroundColor = "#ffc635";
   });
 
   fswTab.addEventListener("click", () => {
@@ -63,6 +66,7 @@ export function handleProgramTabs() {
     fswTab.classList.add("fsw-active");
     fswDiv.style.display = "flex";
     fswDiv.style.opacity = "1";
+    programsSection.style.backgroundColor = "#28eea7";
   });
 
   fsdTab.addEventListener("click", () => {
@@ -71,6 +75,7 @@ export function handleProgramTabs() {
     fsdTab.classList.add("fsd-active");
     fsdDiv.style.display = "flex";
     fsdDiv.style.opacity = "1";
+    programsSection.style.backgroundColor = "#9864da";
   });
 
   uixTab.addEventListener("click", () => {
@@ -79,5 +84,6 @@ export function handleProgramTabs() {
     uixTab.classList.add("uix-active");
     uixDiv.style.display = "flex";
     uixDiv.style.opacity = "1";
+    programsSection.style.backgroundColor = "#fb508e";
   });
 }
