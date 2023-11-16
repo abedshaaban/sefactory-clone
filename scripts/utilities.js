@@ -88,7 +88,7 @@ export function handleProgramTabs() {
   });
 }
 
-export function handleFqas(params) {
+export function handleFqas() {
   const fqa1 = document.getElementById("aws-for-qa-1");
   const fqa2 = document.getElementById("aws-for-qa-2");
   const fqa3 = document.getElementById("aws-for-qa-3");
@@ -104,4 +104,48 @@ export function handleFqas(params) {
   fqa3.parentNode.addEventListener("click", () => {
     fqa3.classList.toggle("auto-height");
   });
+}
+
+export function handleCarouselAnimation() {
+  const testimonialsBody = document.getElementsByClassName(
+    "testimonials-body-content"
+  );
+  const testimonialsNav = document.getElementsByClassName("testimonials-nav");
+
+  const removeAllShowingCarousels = () => {
+    for (let i = 0; i < testimonialsBody.length; i++) {
+      const element = testimonialsBody[i];
+      element.style.display = "none";
+    }
+    for (let i = 0; i < testimonialsNav.length; i++) {
+      const element = testimonialsNav[i];
+
+      element.style.backgroundColor = "#a5a6a9";
+    }
+  };
+
+  let j = 0;
+
+  for (let i = 0; i < testimonialsNav.length; i++) {
+    const element = testimonialsNav[i];
+
+    element.addEventListener("click", () => {
+      removeAllShowingCarousels();
+      j = i;
+      testimonialsBody[j].style.display = "flex";
+      testimonialsNav[j].style.backgroundColor = "#363738";
+    });
+  }
+
+  for (let i = 0; i < testimonialsBody.length; i++) {
+    setTimeout(() => {
+      if (j === testimonialsBody.length) {
+        j = 0;
+      } else {
+        removeAllShowingCarousels();
+        testimonialsBody[i].style.display = "flex";
+        testimonialsNav[i].style.backgroundColor = "#363738";
+      }
+    }, 6000 * i);
+  }
 }

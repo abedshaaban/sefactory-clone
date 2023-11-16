@@ -3,6 +3,7 @@ import {
   hideNav,
   handleProgramTabs,
   handleFqas,
+  handleCarouselAnimation,
 } from "./utilities.js";
 
 const overlayNav = document.getElementsByClassName("overlay-header")[0];
@@ -114,5 +115,7 @@ fswDiv.style.opacity = "1";
 handleProgramTabs();
 
 // handle fqa answers
-
 handleFqas();
+
+// carousel
+handleCarouselAnimation();

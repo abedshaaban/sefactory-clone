@@ -1,12 +1,17 @@
 .testimonials-body {
+  width: 100%;
+  height: auto;
   margin-top: 50px;
   display: flex;
   flex-direction: column;
+  position: relative;
+  transition: transform 500ms ease 0s;
 }
 
 .testimonials-body-content {
   width: 100%;
-  display: flex;
+  max-width: 1200px;
+  display: none;
   flex-direction: row;
   background-color: var(--black);
   border-radius: 20px;
@@ -53,6 +58,24 @@
   max-width: 100%;
   vertical-align: middle;
   display: inline-block;
+}
+
+#testimonials-body-nav {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.testimonials-nav {
+  width: 10px;
+  height: 10px;
+  background-color: var(--grey);
+  border-radius: 9999px;
+  cursor: pointer;
 }
 
 /* phones */
