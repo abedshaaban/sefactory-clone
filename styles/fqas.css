@@ -1,0 +1,55 @@
+.faqs-body {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.faqs-body-question {
+  border: 5px solid var(--black-2);
+  background: var(--black-2);
+  cursor: pointer;
+  border-radius: 10px;
+  display: block;
+  overflow: hidden;
+  padding-top: 20px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.faqs-body-question-header span {
+  margin-right: 10px;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.4;
+}
+
+.faqs-body-question-header > div {
+  color: var(--white);
+  white-space: normal;
+  font-size: 14px;
+  font-weight: 900;
+  line-height: 1.4;
+  overflow: hidden;
+}
+
+.faqs-body-question > p {
+  /* height: 0;
+  overflow: hidden; */
+  margin-bottom: 0;
+  padding-top: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.faqs-body-question-answer ul {
+  margin-top: 0;
+  margin-bottom: 10px;
+  padding-left: 40px;
+}
+
+.faqs-body-question-answer {
+  font-size: 14px;
+  line-height: 1.6;
+}
