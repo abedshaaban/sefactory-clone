@@ -50,6 +50,10 @@
   display: none;
 }
 
+.programs-body-context-fsc {
+  border-top-left-radius: 0;
+}
+
 .programs-body-context-text {
   width: 50%;
   grid-row-gap: 24px;

@@ -1,4 +1,4 @@
-import { showNav, hideNav } from "./utilities.js";
+import { showNav, hideNav, handleProgramTabs } from "./utilities.js";
 
 const overlayNav = document.getElementsByClassName("overlay-header")[0];
 const navLinks = document.getElementsByClassName("overlay-header-body-links-a");
@@ -99,3 +99,11 @@ for (let i = 0; i < navLinks.length; i++) {
     overlayNav.classList.remove("overlay-visible");
   });
 }
+
+// handle tabs navigation
+const fswDiv = document.getElementsByClassName("programs-body-context-fsw")[0];
+
+fswDiv.style.display = "flex";
+fswDiv.style.opacity = "1";
+
+handleProgramTabs();
